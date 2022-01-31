@@ -8,5 +8,8 @@ public class BallStory {
         Wolf wolf = new Wolf();
         Fox fox = new Fox();
 
+        hare.tryEat(kolobok);
+        wolf.tryEat(kolobok);
+        fox.tryEat(kolobok);
     }
 }
