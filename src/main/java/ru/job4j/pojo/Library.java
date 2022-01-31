@@ -17,7 +17,6 @@ public class Library {
         printLibrary(books);
 
         Book tempBook = books[0];
-        //tempBook = books[0];
         books[0] = books[3];
         books[3] = tempBook;
 
