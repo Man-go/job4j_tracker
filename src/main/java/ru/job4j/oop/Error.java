@@ -16,8 +16,6 @@ public class Error {
         error.printInfo();
         error1.printInfo();
         error2.printInfo();
-
-
     }
 
     public Error(boolean active, int status, String message) {

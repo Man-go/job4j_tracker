@@ -6,7 +6,6 @@ public class Computer {
     private int ssd;
     private String cpu;
 
-
     public static void main(String[] args) {
         Computer computer = new Computer(true, 500, "Intel Core I7-10700K");
         computer.printInfo();
