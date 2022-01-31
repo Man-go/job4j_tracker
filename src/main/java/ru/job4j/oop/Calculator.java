@@ -6,8 +6,22 @@ public class Calculator {
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        int rsl = calculator.sumAllOperation(1);
+
+        int rsl = calculator.sum(3);
         System.out.println(rsl);
+
+        rsl = calculator.minus(1);
+        System.out.println(rsl);
+
+        rsl = calculator.divide(12);
+        System.out.println(rsl);
+
+        rsl = calculator.multiply(9);
+        System.out.println(rsl);
+
+        rsl = calculator.sumAllOperation(1);
+        System.out.println(rsl);
+
     }
 
     public static int sum(int y) {
