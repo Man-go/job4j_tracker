@@ -4,16 +4,13 @@ public class Student {
 
     public static void main(String[] args) {
         Student petya = new Student();
-        petya.music();
-        petya.song();
-        petya.music();
-        petya.song();
-        petya.music();
-        petya.song();
+        String song = "I believe, I can fly";
+        petya.music(song);
+
     }
 
-    public void music() {
-        System.out.println("Tra tra tra");
+    public void music(String lyrics) {
+        System.out.println("I can sing a song : " + lyrics);
     }
 
     public void song() {
