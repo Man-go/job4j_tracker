@@ -20,7 +20,7 @@ public class TriangleTest {
 
     @Test
     public void when16Minus12and40and04ThenMinus1() {
-        Point a = new Point(16,-12 );
+        Point a = new Point(16, -12);
         Point b = new Point(4, 0);
         Point c = new Point(0, 4);
         Triangle triangle = new Triangle(a, b, c);
