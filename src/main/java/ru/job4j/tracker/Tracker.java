@@ -72,6 +72,5 @@ public class Tracker {
         } else {
             return false;
         }
-
     }
 }
