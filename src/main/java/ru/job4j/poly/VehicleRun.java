@@ -13,5 +13,4 @@ public class VehicleRun {
             vehicle.move();
         }
     }
-
 }
