@@ -14,14 +14,7 @@ public class Tracker {
     }
 
     public Item[] findAll() {
-        Item[] results = new Item[size];
-        int counter = 0;
-        for (int i = 0; i < size; i++) {
-            if (items[i] != null) {
-                results[counter++] = items[i];
-            }
-        }
-        return Arrays.copyOf(results, counter);
+         return Arrays.copyOf(items, size);
     }
 
     public Item[] findByName(String key) {
