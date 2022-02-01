@@ -6,6 +6,15 @@ public class Error {
     private int status;
     private String message;
 
+    public Error(boolean active, int status, String message) {
+        this.active = active;
+        this.status = status;
+        this.message = message;
+    }
+
+    public Error() {
+    }
+
     public static void main(String[] args) {
         Error defaultError = new Error();
         Error error = new Error(true, 404, "bad connection");
@@ -16,15 +25,6 @@ public class Error {
         error.printInfo();
         error1.printInfo();
         error2.printInfo();
-    }
-
-    public Error(boolean active, int status, String message) {
-        this.active = active;
-        this.status = status;
-        this.message = message;
-    }
-
-    public Error() {
     }
 
     public void printInfo() {
