@@ -17,6 +17,7 @@ public class StartUI {
     }
 
     public static void showAllItems(Tracker tracker) {
+        System.out.println("=== Show all items ===");
         Item[] items = tracker.findAll();
         if (items.length > 0) {
             for (Item item : items) {
