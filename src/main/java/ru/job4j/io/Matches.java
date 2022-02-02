@@ -13,7 +13,7 @@ public class Matches {
             System.out.print(player + " введите число от 1 до 3: ");
 
             int matches = Integer.parseInt(input.nextLine());
-            while (!(matches > 0 && matches < 4 && matches <= count)) {
+            while (matches < 0 || matches > 4 || matches > count) {
                 System.out.println("Неверное количество спичек. Попробуйте еще раз");
                 System.out.print(player + " введите число от 1 до 3: ");
                 matches = Integer.parseInt(input.nextLine());
