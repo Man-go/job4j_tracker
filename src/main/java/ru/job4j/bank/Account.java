@@ -2,6 +2,13 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * This class descrubes a bank account/
+ * contains fields: account requesite and account balance
+ *
+ * @author - Dmitriy
+ * @version 1.0
+ */
 public class Account {
     private String requisite;
     private double balance;

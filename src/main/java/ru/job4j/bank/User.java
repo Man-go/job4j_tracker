@@ -3,6 +3,13 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * This class describes bank user
+ * fields: username and passport number - id user
+ *
+ * @author - Dmitriy
+ * @version 1.0
+ */
 public class User {
     private String passport;
     private String username;
