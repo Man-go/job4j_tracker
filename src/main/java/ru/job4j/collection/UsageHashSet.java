@@ -9,8 +9,12 @@ public class UsageHashSet {
         Set<String> autos = new HashSet<>();
         autos.add("Lada");
         autos.add("BMW");
+        autos.add("Lada");
+        autos.add("BMW");
         autos.add("Volvo");
         autos.add("Toyota");
+        autos.add("BMW");
+        autos.add("Volvo");
 
         for (String auto : autos) {
             System.out.println(auto);
