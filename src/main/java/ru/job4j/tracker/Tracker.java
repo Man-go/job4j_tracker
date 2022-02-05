@@ -15,14 +15,16 @@ public class Tracker {
     }
 
     public List<Item> findAll() {
-         return items;
+        return List.copyOf(items);
+        //return items;
     }
 
     public List<Item> findByName(String key) {
         List<Item> results = new ArrayList<>();
-        for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getName().equals(key)) {
-                results.add(items.get(i));
+
+        for (Item item : items) {
+            if (item.getName().equals(key)) {
+                results.add(item);
             }
         }
         return results;
