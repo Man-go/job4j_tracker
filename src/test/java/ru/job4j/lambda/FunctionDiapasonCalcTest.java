@@ -27,14 +27,6 @@ public class FunctionDiapasonCalcTest {
     }
 
     @Test
-    public void whenExponentialFunction() {
-        FunctionDiapasonCalc dc = new FunctionDiapasonCalc();
-        List<Double> result = dc.diapason(5, 8, x -> Math.pow(x, x));
-        List<Double> expected = Arrays.asList(3125D, 46656D, 823543D);
-        assertThat(result, is(expected));
-    }
-
-    @Test
     public void whenExponentialFunction2() {
         FunctionDiapasonCalc dc = new FunctionDiapasonCalc();
         List<Double> result = dc.diapason(2, 5, x -> Math.pow(7, x) + 3);

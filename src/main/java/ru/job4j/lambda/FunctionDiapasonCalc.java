@@ -7,10 +7,10 @@ import java.util.function.Function;
 public class FunctionDiapasonCalc {
 
     public List<Double> diapason(int start, int end, Function<Double, Double> func) {
-        List<Double> functionValue = new ArrayList<>();
+        List<Double> result = new ArrayList<>();
         for (int i = start; i < end; i++) {
-            functionValue.add(func.apply((double) i));
+            result.add(func.apply((double) i));
         }
-        return functionValue;
+        return result;
     }
 }
