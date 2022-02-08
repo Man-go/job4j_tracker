@@ -51,7 +51,7 @@ public class Analyze {
         return stream
                 .flatMap(pupil -> pupil.getSubjects().stream())
                 .collect(Collectors.groupingBy(
-                        Subject::getName, LinkedHashMap::new, Collectors.summingDouble(Subject::getScore)))
+                        Subject::getName, Collectors.summingDouble(Subject::getScore)))
                 .entrySet().stream()
                     .map(pupil -> new Tuple(pupil.getKey(), pupil.getValue()))
                     .max(Comparator.comparing(Tuple::getScore))
